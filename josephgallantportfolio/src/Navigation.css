@@ -1,0 +1,26 @@
+#main-nav {
+  margin: auto;
+  width: 1128px;
+  font-size: 2rem;
+}
+
+#main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#main-nav a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#main-nav a:visited {
+  color: white;
+}
+
+#main-nav a:hover {
+  text-decoration: overline;
+}
