@@ -3,6 +3,11 @@
   src: url("./assets/fonts/Inter-VariableFont_opsz.ttf");
 }
 
+@font-face {
+  font-family: Inter-Italic;
+  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz.ttf");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

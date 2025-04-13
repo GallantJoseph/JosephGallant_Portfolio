@@ -1,0 +1,60 @@
+#linear-clock {
+  width: 1128px;
+  height: 128px;
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.35));
+  border-radius: 8px;
+}
+
+#clock-hand {
+  position: relative;
+  z-index: 0;
+  margin-left: 64px;
+  margin-right: 64px;
+  width: 44px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid white;
+  border-radius: 8px;
+  top: -72px;
+  left: -4px;
+}
+
+#clock-range {
+  position: relative;
+  background-color: royalblue;
+  border-radius: 8px;
+  width: 240px;
+  height: 64px;
+  top: -8px;
+  left: 444px;
+}
+
+#clock-numbers {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  top: 64px;
+}
+
+#clock-numbers ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  padding: 0px 64px;
+  text-align: center;
+}
+
+#clock-numbers ul li {
+  margin: 0;
+  width: 40px;
+}
+
+.large-digit {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.small-digit {
+  font-size: 1.75rem;
+}
