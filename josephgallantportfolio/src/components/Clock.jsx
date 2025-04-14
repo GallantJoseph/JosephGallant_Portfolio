@@ -128,36 +128,42 @@ const Clock = () => {
         </div>
       </div>
       <div id="clock-min-max">
-        <label htmlFor="minRangeSelect">Min range</label>
-        <select
-          name="minRangeSelect"
-          id="minRangeSelect"
-          onChange={(e) => {
-            handleMinRangeChange(e.target.value);
-          }}
-          value={minRangeValue}
-        >
-          {options.map((opt) => (
-            <option key={opt} value={opt}>
-              {opt}
-            </option>
-          ))}
-        </select>
-        <label htmlFor="maxRangeSelect">Max range</label>
-        <select
-          name="maxRangeSelect"
-          id="maxRangeSelect"
-          onChange={(e) => {
-            handleMaxRangeChange(e.target.value);
-          }}
-          value={maxRangeValue}
-        >
-          {options.map((opt) => (
-            <option key={opt} value={opt}>
-              {opt}
-            </option>
-          ))}
-        </select>
+        <div id="min-range">
+          <label htmlFor="minRangeSelect">Minimum Range</label>
+          <br />
+          <select
+            name="minRangeSelect"
+            id="minRangeSelect"
+            onChange={(e) => {
+              handleMinRangeChange(e.target.value);
+            }}
+            value={minRangeValue}
+          >
+            {options.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div id="max-range">
+          <label htmlFor="maxRangeSelect">Maximum Range</label>
+          <br />
+          <select
+            name="maxRangeSelect"
+            id="maxRangeSelect"
+            onChange={(e) => {
+              handleMaxRangeChange(e.target.value);
+            }}
+            value={maxRangeValue}
+          >
+            {options.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </section>
   );

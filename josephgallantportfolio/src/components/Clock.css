@@ -1,3 +1,8 @@
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 #linear-clock {
   width: 1128px;
   height: 128px;
@@ -69,4 +74,22 @@
   margin: auto;
   text-align: center;
   border-radius: 24px;
+}
+
+#clock-min-max {
+  position: relative;
+  top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#clock-min-max label {
+  font-size: 1.75rem;
+}
+
+#clock-min-max select {
+  font-size: 3rem;
+  text-align-last: center;
 }
