@@ -8,7 +8,7 @@
 #clock-hand {
   position: relative;
   z-index: 0;
-  margin-left: 64px;
+  margin-left: 60px;
   margin-right: 64px;
   width: 44px;
   height: 60px;
@@ -16,17 +16,14 @@
   border: 2px solid white;
   border-radius: 8px;
   top: -72px;
-  left: -4px;
 }
 
 #clock-range {
   position: relative;
-  background-color: royalblue;
+  background-color: rgba(0, 221, 0, 0.5);
   border-radius: 8px;
-  width: 240px;
   height: 64px;
   top: -8px;
-  left: 444px;
 }
 
 #clock-numbers {
@@ -57,4 +54,19 @@
 
 .small-digit {
   font-size: 1.75rem;
+}
+
+#clock-seconds {
+  position: relative;
+  align-content: center;
+  top: -64px;
+  width: 96px;
+  height: 64px;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  border-radius: 24px;
 }
