@@ -3,3 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.content-box {
+  background-color: rgba(217, 217, 217, 0.95);
+  width: fit-content;
+  color: black;
+  border: 5px solid black;
+  border-radius: 16px;
+  margin: auto;
+  padding: 16px;
+}

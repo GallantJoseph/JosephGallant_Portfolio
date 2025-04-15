@@ -25,11 +25,13 @@ const Clock = () => {
   // Seconds useState variable
   const now = new Date();
 
-  const [hours, setHours] = useState(
-    now.getHours() + now.getHours() + now.getMinutes() / 60
-  );
+  const [hours, setHours] = useState(now.getHours() + now.getMinutes() / 60);
   const [minutes, setMinutes] = useState(now.getMinutes());
   const [seconds, setSeconds] = useState(now.getSeconds());
+
+  // Time left in minutes
+  const [hoursLeft, setHoursLeft] = useState(0);
+  const [minutesLeft, setMinutesLeft] = useState(0);
 
   useEffect(() => {
     // Populate the options array that will be used for the select components
@@ -48,6 +50,18 @@ const Clock = () => {
       setSeconds(currTime.getSeconds());
       setMinutes(currTime.getMinutes());
       setHours(currTime.getHours() + currTime.getMinutes() / 60);
+
+      if (currTime.getHours() <= maxRangeValue) {
+        const minLeft =
+          maxRangeValue * 60 -
+          (currTime.getHours() * 60 + currTime.getMinutes());
+
+        setHoursLeft(parseInt(minLeft / 60));
+        setMinutesLeft(minLeft % 60);
+      } else {
+        setHoursLeft(0);
+        setMinutesLeft(0);
+      }
     }, 1000);
   }, []);
 
@@ -125,6 +139,12 @@ const Clock = () => {
         <div id="clock-hand" style={{ left: hours * DIGITS_WIDTH }}></div>
         <div id="clock-seconds">
           <span id="seconds">{seconds}</span>
+        </div>
+        <div id="time-left">
+          <h3>Active Hours Remaining</h3>
+          <span className={hoursLeft < 1 ? "red" : ""}>
+            {hoursLeft.toFixed(0)} Hour(s), {minutesLeft.toFixed(0)} Minute(s)
+          </span>
         </div>
       </div>
       <div id="clock-min-max">

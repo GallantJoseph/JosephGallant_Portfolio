@@ -76,6 +76,10 @@ h2 {
   border-radius: 24px;
 }
 
+#time-left {
+  text-align: center;
+}
+
 #clock-min-max {
   position: relative;
   top: 32px;
@@ -92,4 +96,9 @@ h2 {
 #clock-min-max select {
   font-size: 3rem;
   text-align-last: center;
+}
+
+.red {
+  color: rgb(255, 48, 48);
+  font-weight: bold;
 }
