@@ -5,11 +5,47 @@
 }
 
 .content-box {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: rgba(217, 217, 217, 0.95);
   width: fit-content;
+  min-width: 50%;
   color: black;
   border: 5px solid black;
   border-radius: 16px;
-  margin: auto;
+  margin: 32px auto;
   padding: 16px;
+  gap: 16px;
+}
+
+#projects-section,
+#gallery-section {
+  width: 960px;
+  margin: auto;
+}
+
+#projects-section h3,
+#gallery-section h3 {
+  margin: 8px auto;
+  font-size: 2rem;
+}
+
+#projects-section img,
+#gallery-section img {
+  width: 800px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+#gallery-section div {
+  padding: 32px;
+}
+
+#gallery-section img {
+  width: 640px;
+  margin-bottom: 32px;
+}
+
+.project-description {
+  margin: auto 16px;
 }

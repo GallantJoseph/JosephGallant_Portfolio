@@ -4,7 +4,7 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div class="content-box">
-        <p>You can contact me via email or through my LinkedIn Profile</p>
+        <h3>You can contact me via email, or through my LinkedIn Profile</h3>
         <p>
           Email:{" "}
           <span>
