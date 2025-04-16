@@ -55,6 +55,7 @@
 #portfolio-mid-box h3 {
   text-align: right;
   margin-left: 256px;
+  border-bottom: 2px solid black;
 }
 
 #portfolio-top-left-box {

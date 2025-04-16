@@ -17,7 +17,6 @@ const Home = () => {
       <div id="portfolio-mid-box" className="portfolio-box">
         <h2>Portfolio</h2>
         <h3>Joseph Gallant</h3>
-        <div></div>
       </div>
       <div id="portfolio-bot-left-box" className="portfolio-box">
         <Link to="/Clock" className="home-link">
