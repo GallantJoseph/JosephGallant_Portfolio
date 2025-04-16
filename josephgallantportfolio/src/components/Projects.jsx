@@ -17,6 +17,13 @@ const Projects = () => {
           people with ADHD. You can try it yourself now!
           <br />
           <Link to="/Clock">Try the Linear Clock</Link>
+          <br />
+          <a
+            href="https://github.com/GallantJoseph/JosephGallant_Portfolio"
+            target="_blank"
+          >
+            GitHub Project
+          </a>
         </p>
         <img src={LinearClockImg} alt="Picture of a Linear Clock" />
       </div>
@@ -26,6 +33,13 @@ const Projects = () => {
           Our most recent addition website from a Keyin College Sprint project.
           You can view or order individual computer components, and select
           components for a PC build.
+          <br />
+          <a
+            href="https://github.com/GallantJoseph/Final_Sprint-S2"
+            target="_blank"
+          >
+            GitHub Project
+          </a>
         </p>
         <img src={PCBuilderImg} alt="Picture of a Linear Clock" />
       </div>
@@ -35,6 +49,13 @@ const Projects = () => {
           Our second Sprint website project from Keyin College, for a coffee
           shop. You can review items, add items to your cart, and finally review
           and place your order.
+          <br />
+          <a
+            href="https://github.com/GallantJoseph/Midterm_Sprint-S2"
+            target="_blank"
+          >
+            GitHub Project
+          </a>
         </p>
         <img src={CodeBrewCoffeeImg} alt="Picture of a Linear Clock" />
       </div>
@@ -44,6 +65,13 @@ const Projects = () => {
           Our first Sprint website project from Keyin College. This website
           showcases the three pioneering companies that started it all: Atari,
           Nintendo, and Sega.
+          <br />
+          <a
+            href="https://github.com/GallantJoseph/videogameshistory"
+            target="_blank"
+          >
+            GitHub Project
+          </a>
         </p>
         <img src={VidGamesHistoryImg} alt="Picture of a Linear Clock" />
       </div>
