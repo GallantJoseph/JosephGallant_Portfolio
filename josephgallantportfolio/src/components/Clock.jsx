@@ -22,7 +22,6 @@ const Clock = () => {
 
   const [options, setOptions] = useState([]);
 
-  // Seconds useState variable
   const now = new Date();
 
   const [hours, setHours] = useState(now.getHours() + now.getMinutes() / 60);
@@ -51,16 +50,29 @@ const Clock = () => {
       setMinutes(currTime.getMinutes());
       setHours(currTime.getHours() + currTime.getMinutes() / 60);
 
-      if (currTime.getHours() <= maxRangeValue) {
-        const minLeft =
-          maxRangeValue * 60 -
-          (currTime.getHours() * 60 + currTime.getMinutes());
-
-        setHoursLeft(parseInt(minLeft / 60));
-        setMinutesLeft(minLeft % 60);
-      } else {
-        setHoursLeft(0);
+      // If the time is under the minimum range, we only need to calculate
+      // the difference between the maximum and minimum range
+      if (
+        currTime.getHours() < minRangeValue ||
+        (currTime.getHours() == maxRangeValue && currTime.getMinutes() == 0)
+      ) {
+        setHoursLeft(maxRangeValue - minRangeValue);
         setMinutesLeft(0);
+      } else {
+        if (
+          currTime.getHours() < maxRangeValue ||
+          (currTime.getHours() === 0 && currTime.getMinutes() > 0)
+        ) {
+          const minLeft =
+            maxRangeValue * 60 -
+            (currTime.getHours() * 60 + currTime.getMinutes());
+
+          setHoursLeft(parseInt(minLeft / 60));
+          setMinutesLeft(minLeft % 60);
+        } else {
+          setHoursLeft(0);
+          setMinutesLeft(0);
+        }
       }
     }, 1000);
   }, []);
