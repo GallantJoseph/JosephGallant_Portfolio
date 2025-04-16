@@ -13,17 +13,15 @@ const Contact = () => {
             </a>
           </span>
           <br />
-          <p>
-            LinkedIn:{" "}
-            <span>
-              <a
-                href="https://www.linkedin.com/in/joseph-gallant-331b72346/"
-                target="_blank"
-              >
-                Joseph Gallant
-              </a>
-            </span>
-          </p>
+          LinkedIn:{" "}
+          <span>
+            <a
+              href="https://www.linkedin.com/in/joseph-gallant-331b72346/"
+              target="_blank"
+            >
+              Joseph Gallant
+            </a>
+          </span>
         </p>
       </div>
     </section>

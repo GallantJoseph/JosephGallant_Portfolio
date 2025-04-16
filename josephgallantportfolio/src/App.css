@@ -16,6 +16,7 @@
   margin: 32px auto;
   padding: 16px;
   gap: 16px;
+  line-height: 150%;
 }
 
 #projects-section,
@@ -26,7 +27,7 @@
 
 #projects-section h3,
 #gallery-section h3 {
-  margin: 8px auto;
+  margin: 16px auto;
   font-size: 2rem;
 }
 

@@ -1,3 +1,9 @@
+/*
+  Description: Portfolio - Joseph Gallant
+  Author: Joseph Gallant
+  Dates: April 7, 2025 - April 16, 2025
+*/
+
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";

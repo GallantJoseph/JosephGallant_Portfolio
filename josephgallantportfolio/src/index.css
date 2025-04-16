@@ -8,6 +8,11 @@
   src: url("./assets/fonts/Inter-Italic-VariableFont_opsz.ttf");
 }
 
+@font-face {
+  font-family: BrushScript;
+  src: url("./assets/fonts/BrushScriptOpti-Regular.otf");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section id="projects-section">
       <h2>My Projects</h2>
-      <div class="content-box">
+      <div className="content-box">
         <h3>Linear Clock</h3>
         <p className="project-description">
           A fun personal project. This clock shows the time on a linear scale
@@ -20,7 +20,7 @@ const Projects = () => {
         </p>
         <img src={LinearClockImg} alt="Picture of a Linear Clock" />
       </div>
-      <div class="content-box">
+      <div className="content-box">
         <h3>Codebrew PC Builder</h3>
         <p className="project-description">
           Our most recent addition website from a Keyin College Sprint project.
@@ -29,7 +29,7 @@ const Projects = () => {
         </p>
         <img src={PCBuilderImg} alt="Picture of a Linear Clock" />
       </div>
-      <div class="content-box">
+      <div className="content-box">
         <h3>Codebrew Café</h3>
         <p className="project-description">
           Our second Sprint website project from Keyin College, for a coffee
@@ -38,7 +38,7 @@ const Projects = () => {
         </p>
         <img src={CodeBrewCoffeeImg} alt="Picture of a Linear Clock" />
       </div>
-      <div class="content-box">
+      <div className="content-box">
         <h3>Video Games History</h3>
         <p className="project-description">
           Our first Sprint website project from Keyin College. This website
